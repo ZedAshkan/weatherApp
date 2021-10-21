@@ -15,25 +15,18 @@
 <body>
 
 	<div class="container mt-3 bg-transparent border border-1 border-info shadow-lg rounded-3">
-		<h1 class="text-center text-muted">weather app</h1>
+		<h1 class="text-center text-muted mt-2">weather app</h1>
 
-		<form id="form" class="m-3">
+		<p class="text-center mb-0 text-info">Enter your location :</p>
+		<form id="form" class="m-2">
 			<div class=" border border-2 border-info rounded-3 w-75 mx-auto h-40 d-flex align-items-center">
-				<input class="bg-transparent w-100 ms-2" type="text" placeholder="location">
+				<input class="bg-transparent w-100 ms-2" type="text" placeholder="Enter your city name">
 
 				<i class="bi bi-search fs-3 text-muted me-2"></i>
 			</div>
 		</form>
 
-		<div class="">
-			<div id="city">
-				
-			</div>
-			<div>
-				<span id="temp"></span>
-				<span>&deg;C</span>
-			</div>
-		</div>
+		<div id="box"></div>
 
 	</div>
 
