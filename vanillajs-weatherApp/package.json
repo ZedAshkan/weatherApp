@@ -1,0 +1,25 @@
+{
+  "name": "vanillajs-weatherapp",
+  "version": "2.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build-css": "tailwindcss -i src/style.css -o public/style.css -w",
+    "serve": "live-server --ignorePattern='/*.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zedashkan/weatherApp.git"
+  },
+  "author": "ZedAshkan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zedashkan/weatherApp/issues"
+  },
+  "homepage": "https://github.com/zedashkan/weatherApp#readme",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.17"
+  }
+}
