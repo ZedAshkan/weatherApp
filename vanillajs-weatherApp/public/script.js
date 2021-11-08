@@ -38,7 +38,6 @@ const current = async (query) =>{
 const currentSet = async (query)=>{
     spiner()
     const data = await current(query);
-    // console.log(data)
     locationName.innerHTML = data.location.name
     locationC.innerHTML = data.location.country
     locationR.innerHTML = data.location.region
@@ -72,7 +71,7 @@ const resultSearch = async (query) => {
     })
 }
 
-results.addEventListener('click' , e=>{
+results.addEventListener('mousedown' , e=>{
     if(e.target.classList.contains('search-item')){
         const dataUrl =  e.target.getAttribute('data-url');
         currentSet(dataUrl)
@@ -88,8 +87,7 @@ search.addEventListener('focus', e => {
 })
 
 search.addEventListener('blur', e => {
-    setTimeout(()=>results.setAttribute('hidden', 'true'),250)
-    
+    results.setAttribute('hidden', 'true')
 })
 
 search.addEventListener('keyup', e => {
